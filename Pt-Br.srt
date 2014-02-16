@@ -1,0 +1,564 @@
+1
+00:00:00,000 --> 00:00:25,280
+[TOCANDO MÚSICA]
+
+2
+00:00:25,280 --> 00:00:28,290
+Você está assistindo CSS Cross
+Country e este é o nivel um,
+
+3
+00:00:28,290 --> 00:00:30,280
+Fundamentos à Prova de Gelo.
+
+4
+00:00:30,280 --> 00:00:33,940
+No nível um, nós discutiremos
+como acrescentar CSS, nossos
+
+5
+00:00:33,940 --> 00:00:38,680
+seletores básicos, ordem em 
+cascata e a propriedade flutuante.
+
+6
+00:00:38,680 --> 00:00:41,500
+Agora, se isto é uma pequena revisão
+para você, vá em frente e pule
+
+7
+00:00:41,500 --> 00:00:42,910
+adiante para os desafios.
+
+8
+00:00:42,910 --> 00:00:44,990
+Precisamos ter certeza de
+que todos estão na mesma pagina
+
+9
+00:00:44,990 --> 00:00:48,510
+antes de mudarmos para mais
+assuntos avançados.
+
+10
+00:00:48,510 --> 00:00:50,980
+Primeiro, vamos começar  como
+podemos adicionar CSS a nossa
+
+11
+00:00:50,980 --> 00:00:51,970
+aplicação.
+
+12
+00:00:51,970 --> 00:00:55,950
+Agora, o jeito mais fácil para 
+fazer isso é por meio do atributo
+
+13
+00:00:55,950 --> 00:01:00,130
+de estilo inline do nosso HTML, e é
+muito fácil de fazer, porém é
+
+14
+00:01:00,130 --> 00:01:01,770
+um pesadelo a manutenção.
+
+15
+00:01:01,770 --> 00:01:05,700
+Segundo, adicionando nossos estilos
+por meio do cabeçalho do documento que
+
+16
+00:01:05,700 --> 00:01:08,900
+também funciona, mas se tivermos
+mais que uma página no nosso
+
+17
+00:01:08,900 --> 00:01:11,540
+documento também torna um 
+pesadelo de manutenção.
+
+18
+00:01:11,540 --> 00:01:15,820
+Então, a principal maneira de adicionar seus
+estilos é os incluindo
+
+19
+00:01:15,820 --> 00:01:19,240
+todos em uma folha de estilo externa 
+e manter um link no cabeçalho
+
+20
+00:01:19,240 --> 00:01:21,130
+de todas as páginas do
+seu documento.
+
+21
+00:01:21,130 --> 00:01:23,770
+Esta é a maneira que nós vamos tratar
+todos os estilos neste
+
+22
+00:01:23,770 --> 00:01:26,480
+curso, então suponha que tudo
+está em sua própria
+
+23
+00:01:26,480 --> 00:01:28,730
+folha de estilo separada.
+
+24
+00:01:28,730 --> 00:01:31,330
+Seguindo em frente, há três
+seletores básicos que nós vamos
+
+25
+00:01:31,330 --> 00:01:35,860
+usar no CCS Cross Country e
+são o elemento, classe
+
+26
+00:01:35,860 --> 00:01:37,670
+e os seletores ID.
+
+27
+00:01:37,670 --> 00:01:40,910
+Há uma lista de mais
+seletores para lidar mas
+
+28
+00:01:40,910 --> 00:01:43,850
+nós não iremos tratar sobre eles
+com profundidade neste curso.
+
+29
+00:01:43,850 --> 00:01:46,590
+Se você quiser aprender mais,
+visite no link abaixo deste
+
+30
+00:01:46,590 --> 00:01:49,700
+video para aprender mais sobre coisas
+como os seletores "child"(that imagefilho) 
+
+31
+00:01:49,700 --> 00:01:51,140
+e "sibling"(irmão).
+
+32
+00:01:51,140 --> 00:01:55,300
+Então o primeiro desses seletores CSS 
+básicos é o seletor elemento
+
+33
+00:01:55,300 --> 00:01:58,800
+e apenas para revisar,
+que está diretamente mapeando a
+
+34
+00:01:58,800 --> 00:02:02,760
+tag HTML para a sua
+declaração CSS.
+
+35
+00:02:02,760 --> 00:02:06,090
+Também somos capazes de selecionar ítens
+pelo atributo classe
+
+36
+00:02:06,090 --> 00:02:08,750
+com um seletor classe.
+
+37
+00:02:08,750 --> 00:02:12,560
+Finalmente, o seletor ID permite-nos
+selecionar itens por meio
+
+38
+00:02:12,560 --> 00:02:14,780
+do seu atributo ID.
+
+39
+00:02:14,780 --> 00:02:17,700
+Temos também a capacidade de
+combinar mais de um destes
+
+40
+00:02:17,700 --> 00:02:19,900
+seletores juntos para
+criar um seletor 
+
+41
+00:02:19,900 --> 00:02:23,080
+composto como este.
+
+42
+00:02:23,080 --> 00:02:25,280
+Então vamos falar sobre
+a ordem em cascata.
+
+43
+00:02:25,280 --> 00:02:28,620
+Em CSS existem duas cascatas
+diferentes para lidar com isso,
+
+44
+00:02:28,620 --> 00:02:32,460
+a primeira sendo onde os estilos são
+localizados na sua aplicação.
+
+45
+00:02:32,460 --> 00:02:36,280
+Agora, em ordem crescente de
+prioridade, os estilos encontrados na
+
+46
+00:02:36,280 --> 00:02:38,700
+folha de estilo externa pode
+ser substituida pelo
+
+47
+00:02:38,700 --> 00:02:40,280
+mesmo estilo definido
+
+48
+00:02:40,280 --> 00:02:43,320
+no cabeçalho do documento, pode 
+ser substituído pelo mesmo estilo
+
+49
+00:02:43,320 --> 00:02:47,870
+definido em linha podendo ser subsitituido
+por itens marcados como importantes.
+
+50
+00:02:47,870 --> 00:02:50,160
+Vamos mostrar porque "important"
+é uma má ideia depois no
+
+51
+00:02:50,160 --> 00:02:52,290
+curso, mas apenas saiba que
+já que estamos incluindo
+
+52
+00:02:52,290 --> 00:02:55,630
+tudo, embora esta é uma
+folha de estilo externa, nós não teremos
+
+53
+00:02:55,630 --> 00:02:57,400
+de lidar com as coisas
+encontradas no cabeçalho(head)
+
+54
+00:02:57,400 --> 00:02:59,840
+ou nos estilos em linha.
+
+55
+00:02:59,840 --> 00:03:02,820
+Então a segunda cascata 
+temos de manter onde a
+
+56
+00:03:02,820 --> 00:03:05,570
+propriedade está atualmente declarada
+na nossa folha de estilo.
+
+57
+00:03:05,570 --> 00:03:07,830
+Neste caso, temos duas introduções
+
+58
+00:03:07,830 --> 00:03:10,270
+de declarações de ajuste de cores.
+
+59
+00:03:10,270 --> 00:03:14,380
+Através da cascata, o segundo
+conjunto de cor será o único que
+
+60
+00:03:14,380 --> 00:03:17,350
+é aplicado para o elemento.
+
+61
+00:03:17,350 --> 00:03:19,440
+É importante lembrar
+que essas propriedades são
+
+62
+00:03:19,440 --> 00:03:21,430
+aditivas se elas
+não se conflitam.
+
+63
+00:03:21,430 --> 00:03:23,680
+Quando coisas são mostradas ao
+usuário, tudo esta indo para
+
+64
+00:03:23,680 --> 00:03:26,970
+combinar juntos, então temos
+mais do que uma declaração
+
+65
+00:03:26,970 --> 00:03:28,760
+de definição de diferentes propriedades
+que estas irão acrescentar
+
+66
+00:03:28,760 --> 00:03:31,710
+juntas, mais tarde.
+
+67
+00:03:31,710 --> 00:03:33,800
+Então para terminar o nível
+um, vamos falar
+
+68
+00:03:33,800 --> 00:03:35,930
+sobre a propriedade flutuante.
+
+69
+00:03:35,930 --> 00:03:38,500
+Agora, você tem provavelmente usado a
+propriedade flutuante em algum ponto
+
+70
+00:03:38,500 --> 00:03:40,150
+e vendo algo como isto.
+
+71
+00:03:40,150 --> 00:03:42,730
+Neste caso, vamos
+prosseguir e flutuar nossa imagem
+
+72
+00:03:42,730 --> 00:03:45,400
+para a esquerda , e isso vai
+para ter o resto do
+
+73
+00:03:45,400 --> 00:03:47,710
+conteúdo envolvido aproximado
+aquela imagem.
+
+74
+00:03:47,710 --> 00:03:49,600
+Mas o que isso está
+fazendo atualmente?
+
+75
+00:03:49,600 --> 00:03:52,790
+Agora, quando flutuarmos algo
+it's going to take that object
+
+76
+00:03:52,790 --> 00:03:56,110
+out of normal document flow and
+push it to the specified
+
+77
+00:03:56,110 --> 00:03:57,950
+edge of its parent container.
+
+78
+00:03:57,950 --> 00:04:01,160
+Any other sibling content in
+that container is going to
+
+79
+00:04:01,160 --> 00:04:03,370
+wrap around our floated item.
+
+80
+00:04:03,370 --> 00:04:06,160
+Now, the float property allows
+us to define whether that item
+
+81
+00:04:06,160 --> 00:04:09,820
+should be on the left or right
+or, if we want to remove a
+
+82
+00:04:09,820 --> 00:04:13,790
+float, we can declare none.
+
+83
+00:04:13,790 --> 00:04:16,490
+Floated items are going to stack
+up against one another
+
+84
+00:04:16,490 --> 00:04:19,570
+until they reach a parent edge
+at which point, they'll break
+
+85
+00:04:19,570 --> 00:04:21,779
+down to the next
+available edge.
+
+86
+00:04:21,779 --> 00:04:24,610
+So in this case, if we have
+three containers floating up
+
+87
+00:04:24,610 --> 00:04:27,750
+against one another, but the
+parent width becomes too small
+
+88
+00:04:27,750 --> 00:04:30,900
+to contain all three, the final
+object is going to break
+
+89
+00:04:30,900 --> 00:04:32,770
+down to a new line.
+
+90
+00:04:32,770 --> 00:04:35,210
+You have to take care though
+when you have multiple things
+
+91
+00:04:35,210 --> 00:04:36,840
+floating with different
+heights.
+
+92
+00:04:36,840 --> 00:04:39,890
+In this case, since the first
+items height is greater than
+
+93
+00:04:39,890 --> 00:04:42,600
+that of the other two elements,
+when one of the
+
+94
+00:04:42,600 --> 00:04:45,800
+other elements breaks to new
+line the first available edge
+
+95
+00:04:45,800 --> 00:04:48,550
+is up against that first
+item rather than all
+
+96
+00:04:48,550 --> 00:04:50,590
+the way at the bottom.
+
+97
+00:04:50,590 --> 00:04:52,970
+It's also important to consider
+that since we can
+
+98
+00:04:52,970 --> 00:04:56,380
+float things left and right at
+the same time, the order in
+
+99
+00:04:56,380 --> 00:04:59,720
+which they appear in the HTML is
+important to know which one
+
+100
+00:04:59,720 --> 00:05:01,970
+will break through new
+line, if necessary.
+
+101
+00:05:01,970 --> 00:05:05,040
+In this case, we have two
+images, one floating left and
+
+102
+00:05:05,040 --> 00:05:08,300
+one floating right, if the
+parent container is too small
+
+103
+00:05:08,300 --> 00:05:12,800
+to contain both of them on the
+same line since the sled image
+
+104
+00:05:12,800 --> 00:05:16,600
+appears second in our HTML it's
+going to break down below
+
+105
+00:05:16,600 --> 00:05:20,210
+the ski image should any
+collision happen.
+
+106
+00:05:20,210 --> 00:05:22,680
+When multiple items are floated
+right and stacking up
+
+107
+00:05:22,680 --> 00:05:25,000
+against one another, these
+items are going to
+
+108
+00:05:25,000 --> 00:05:26,850
+float right to left.
+
+109
+00:05:26,850 --> 00:05:30,130
+So the first item in your HTML
+will be the one that's found
+
+110
+00:05:30,130 --> 00:05:31,380
+on the far right.
+
+111
+00:05:34,030 --> 00:05:35,690
+So that does it for level one.
+
+112
+00:05:35,690 --> 00:05:37,930
+If you haven't already, please
+go ahead and download the
+
+113
+00:05:37,930 --> 00:05:39,420
+slides on the sidebar.
+
+114
+00:05:39,420 --> 00:05:41,840
+They're going to prove to be an
+invaluable resource to help
+
+115
+00:05:41,840 --> 00:05:43,570
+you move through
+the challenges.
+
+116
+00:05:43,570 --> 00:05:46,250
+Also, please use the hints
+if you get stuck.
+
+117
+00:05:46,250 --> 00:05:47,960
+We don't want you to get
+stuck on any one
+
+118
+00:05:47,960 --> 00:05:49,610
+problem for too long.
+
+119
+00:05:49,610 --> 00:05:50,860
+Good luck.
