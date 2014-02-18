@@ -336,13 +336,13 @@ prosseguir e flutuar nossa imagem
 
 72
 00:03:42,730 --> 00:03:45,400
-para a esquerda , e isso vai
-para ter o resto do
+para a esquerda, e isso vai
+agir no resto do
 
 73
 00:03:45,400 --> 00:03:47,710
-conteúdo envolvido aproximado
-aquela imagem.
+conteúdo envolvido e próximo
+daquela imagem.
 
 74
 00:03:47,710 --> 00:03:49,600
@@ -352,213 +352,214 @@ fazendo atualmente?
 75
 00:03:49,600 --> 00:03:52,790
 Agora, quando flutuarmos algo
-it's going to take that object
+ele vai pegar aquele objeto
 
 76
 00:03:52,790 --> 00:03:56,110
-out of normal document flow and
-push it to the specified
+fora do fluxo normal do documento e
+empurrá-lo para a especificada
 
 77
 00:03:56,110 --> 00:03:57,950
-edge of its parent container.
+ponta do seu contêiner pai.
 
 78
 00:03:57,950 --> 00:04:01,160
-Any other sibling content in
-that container is going to
+Qualquer outro conteúdo irmão
+naquele contêiner vai para
 
 79
 00:04:01,160 --> 00:04:03,370
-wrap around our floated item.
+envolver perto de nosso item flutuado.
 
 80
 00:04:03,370 --> 00:04:06,160
-Now, the float property allows
-us to define whether that item
+Agora, a propriedade 'float'(Flutuante) 
+nos permite definir se esse item
 
 81
 00:04:06,160 --> 00:04:09,820
-should be on the left or right
-or, if we want to remove a
+deve ficar à esquerda ou à direita
+ou, se quisermos remover um
 
 82
 00:04:09,820 --> 00:04:13,790
-float, we can declare none.
+'float'(flutuante), podemos 
+declarar none(nenhum).
 
 83
 00:04:13,790 --> 00:04:16,490
-Floated items are going to stack
-up against one another
+Ítens flutuados vão empilhar-se
+um contra o outro
 
 84
 00:04:16,490 --> 00:04:19,570
-until they reach a parent edge
-at which point, they'll break
+até eles alcançarem um limite do pai
+ponto no qual eles irão romper
 
 85
 00:04:19,570 --> 00:04:21,779
-down to the next
-available edge.
+para o proximo
+limite disponível.
 
 86
 00:04:21,779 --> 00:04:24,610
-So in this case, if we have
-three containers floating up
+Assim neste caso, se nós temos
+três contêineres flutuando
 
 87
 00:04:24,610 --> 00:04:27,750
-against one another, but the
-parent width becomes too small
+um contra outro, mas a largura 
+do pai torna-se muito pequena
 
 88
 00:04:27,750 --> 00:04:30,900
-to contain all three, the final
-object is going to break
+para conter todos os três, o objeto
+final vai desmembrar
 
 89
 00:04:30,900 --> 00:04:32,770
-down to a new line.
+para uma nova linha.
 
 90
 00:04:32,770 --> 00:04:35,210
-You have to take care though
-when you have multiple things
+Você tem que ter cuidado ainda
+quando você tem multiplas coisas
 
 91
 00:04:35,210 --> 00:04:36,840
-floating with different
-heights.
+flutuando com diferentes
+alturas.
 
 92
 00:04:36,840 --> 00:04:39,890
-In this case, since the first
-items height is greater than
+Neste caso, desde que os primeiros
+itens de altura é maior do que
 
 93
 00:04:39,890 --> 00:04:42,600
-that of the other two elements,
-when one of the
+dos outros dois elementos,
+quando um dos
 
 94
 00:04:42,600 --> 00:04:45,800
-other elements breaks to new
-line the first available edge
+outros elementos partirem para uma nova
+linha do primeiro limite disponivel
 
 95
 00:04:45,800 --> 00:04:48,550
-is up against that first
-item rather than all
+esta indo contra aquele primeiro
+item antes que toda 
 
 96
 00:04:48,550 --> 00:04:50,590
-the way at the bottom.
+da maneira no fundo"bottom".
 
 97
 00:04:50,590 --> 00:04:52,970
-It's also important to consider
-that since we can
+Também é importante considerar
+que desde que nós podemos
 
 98
 00:04:52,970 --> 00:04:56,380
-float things left and right at
-the same time, the order in
+lançar coisas da esquerda e da 
+direita ao ao mesmo tempo, a ordem no
 
 99
 00:04:56,380 --> 00:04:59,720
-which they appear in the HTML is
-important to know which one
+no qual eles aparecem na HTML é
+importante saber qual deles
 
 100
 00:04:59,720 --> 00:05:01,970
-will break through new
-line, if necessary.
+quebrara através da nova
+linha, se necessário.
 
 101
 00:05:01,970 --> 00:05:05,040
-In this case, we have two
-images, one floating left and
+Neste caso, nós temos duas imagens,
+uma flutuando a esquerda e
 
 102
 00:05:05,040 --> 00:05:08,300
-one floating right, if the
-parent container is too small
+uma flutuando a direita, se o
+contêiner pai é muito pequeno
 
 103
 00:05:08,300 --> 00:05:12,800
-to contain both of them on the
-same line since the sled image
+para conter ambos deles na
+mesma linha desde a imagem do trenó
 
 104
 00:05:12,800 --> 00:05:16,600
-appears second in our HTML it's
-going to break down below
+aparece segundo em nossa HTML
+desmembrando embaixo
 
 105
 00:05:16,600 --> 00:05:20,210
-the ski image should any
-collision happen.
+da imagem do esqui e deveria alguma
+colisão acontecer.
 
 106
 00:05:20,210 --> 00:05:22,680
-When multiple items are floated
-right and stacking up
+Quando vários itens são flutuados
+a direita e empilhando
 
 107
 00:05:22,680 --> 00:05:25,000
-against one another, these
-items are going to
+contra um outro, estes
+itens estão indo
 
 108
 00:05:25,000 --> 00:05:26,850
-float right to left.
+flutuar da direita à esquerda.
 
 109
 00:05:26,850 --> 00:05:30,130
-So the first item in your HTML
-will be the one that's found
+Então o primeiro item no seu HTML
+será o único que é encontrado
 
 110
 00:05:30,130 --> 00:05:31,380
-on the far right.
+na extrema direita.
 
 111
 00:05:34,030 --> 00:05:35,690
-So that does it for level one.
+Então isso o faz para o nível um.
 
 112
 00:05:35,690 --> 00:05:37,930
-If you haven't already, please
-go ahead and download the
+se você não estiver pronto, por favor
+vá em frente e baixe os
 
 113
 00:05:37,930 --> 00:05:39,420
-slides on the sidebar.
+slides na barra lateral.
 
 114
 00:05:39,420 --> 00:05:41,840
-They're going to prove to be an
-invaluable resource to help
+Eles vão demonstrar ser um
+inestimável recurso para ajudar
 
 115
 00:05:41,840 --> 00:05:43,570
-you move through
-the challenges.
+você move-se através
+dos desafios.
 
 116
 00:05:43,570 --> 00:05:46,250
-Also, please use the hints
-if you get stuck.
+Além disso, por favor use as dicas
+caso fique preso.
 
 117
 00:05:46,250 --> 00:05:47,960
-We don't want you to get
-stuck on any one
+Nós não queremos que você 
+se prenda em algum
 
 118
 00:05:47,960 --> 00:05:49,610
-problem for too long.
+problema por muito tempo.
 
 119
 00:05:49,610 --> 00:05:50,860
-Good luck.
+Boa Sorte.
