@@ -71,12 +71,12 @@ por meio do cabeçalho do documento que
 16
 00:01:05,700 --> 00:01:08,900
 também funciona, mas se tivermos
-mais que uma página no nosso
+mais de uma página no nosso
 
 17
 00:01:08,900 --> 00:01:11,540
-documento também torna um 
-pesadelo de manutenção.
+documento também torna 
+a manutenção um pesadelo.
 
 18
 00:01:11,540 --> 00:01:15,820
@@ -139,7 +139,7 @@ visite no link abaixo deste
 30
 00:01:46,590 --> 00:01:49,700
 video para aprender mais sobre coisas
-como os seletores "child"(that imagefilho) 
+como os seletores "child"(filho) 
 
 31
 00:01:49,700 --> 00:01:51,140
@@ -267,11 +267,11 @@ na nossa folha de estilo.
 
 57
 00:03:05,570 --> 00:03:07,830
-Neste caso, temos duas introduções
+Neste caso, temos duas declarações
 
 58
 00:03:07,830 --> 00:03:10,270
-de declarações de ajuste de cores.
+'intro' de ajuste de cores.
 
 59
 00:03:10,270 --> 00:03:14,380
@@ -289,8 +289,8 @@ que essas propriedades são
 
 62
 00:03:19,440 --> 00:03:21,430
-aditivas se elas
-não se conflitam.
+aditivas caso elas
+não entrem em conflito.
 
 63
 00:03:21,430 --> 00:03:23,680
